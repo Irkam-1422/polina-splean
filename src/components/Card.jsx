@@ -79,7 +79,7 @@ export const Card = ({
         <div
           className="inner-div second"
           style={{
-            background: `url("src/assets/bg${i}.png")`,
+            background: `url(${bgs[i - 1]})`,
             transform: !open
               ? "none"
               : type === "vertical"
