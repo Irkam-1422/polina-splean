@@ -1,0 +1,231 @@
+.cont {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  .inner-div {
+    transition: all 0.5s;
+    background: url("../assets/bg1.png");
+    background-size: 100vw !important;
+  }
+
+  .inner-content {
+    position: absolute;
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00000007;
+    transition: all .3s;
+    // z-index: 1000;
+
+    .info-cont {
+      position: absolute;
+
+      background: #000000b0;
+      width: 100vw;
+      height: 100vh;
+      box-sizing: border-box;
+      position: absolute;
+      top: -4.65rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem;
+
+      .inner-info {
+        background: pink;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        .close-btn {
+          position: absolute;
+          top: 0.5rem;
+          right: 0.5rem;
+          cursor: pointer;
+          color: #6e424b;
+          font-size: 1.5rem;
+
+          &:hover {
+            color: #ffffff;
+          }
+        }
+
+        .alphabet {
+          display: flex;
+          gap: 1rem;
+          flex-wrap: wrap;
+          width: 100%;
+        }
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 5rem;
+
+      input {
+        width: 200px;
+        background: #ffffff27;
+        border: 1px solid #000;
+        outline: none;
+        border-radius: 0.5rem;
+        padding: 0.6em 1.2em;
+        font-size: 1.1em;
+        font-weight: 500;
+        margin-top: 0.5rem;
+        // color: #6e424b;
+        font-family: "Nata Sans", sans-serif;
+        text-align: center;
+        transition: all 0.3s;
+
+        &:focus {
+          outline: 2px solid #6e424b6f;
+        }
+      }
+
+      button {
+        background: #6e424b;
+        color: #ffffff;
+        border: none !important;
+        margin-top: 1.5rem;
+        outline: none !important;
+      }
+
+      .title {
+        font-weight: 700;
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+
+        svg {
+          width: 20px;
+          height: 20px;
+          background: #6f424b;
+          border-radius: 0.25rem;
+          color: pink;
+          padding: 0.25rem;
+          box-sizing: border-box;
+          cursor: pointer;
+        }
+      }
+
+      .main-text {
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.vertical-cont {
+  flex-direction: column;
+  .inner-div {
+    width: 100%;
+    height: 50%;
+  }
+  .second {
+    background-position-y: -100% !important;
+  }
+}
+
+.horizontal-cont {
+  flex-direction: row;
+  .inner-div {
+    width: 50%;
+    height: 100%;
+  }
+  .second {
+    background-position-x: 100% !important;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 0.25rem;
+  width: 100%;
+  height: 100%;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input {
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 22px !important;
+      height: 30px;
+      box-sizing: border-box;
+      font-size: 1rem !important;
+      font-weight: 600 !important;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.blur-cont {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(1.2rem);
+  -webkit-backdrop-filter: blur(1.2rem);
+  transition: all 1s;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: #00000050;
+  height: 100vh;
+
+  input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    padding: 0.9rem;
+    box-sizing: border-box;
+    width: 3rem;
+    height: 3.3rem;
+    border-radius: 0.25rem;
+    outline: none !important;
+    border: none !important;
+    transition: all 0.3s;
+  }
+}
+
+.ticket-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  img {
+    width: 100%;
+    max-width: 460px;
+    height: auto;
+  }
+}
