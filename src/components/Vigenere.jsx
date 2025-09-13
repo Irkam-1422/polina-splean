@@ -28,6 +28,7 @@ export const Vigenere = ({ returnAnswer, color, bg }) => {
           onClick={() => setShowAlphabet(true)}
         />
       </div>
+      <span className="main-text">We'll start with a hard one. But don't worry, it'll get easier... maybe... :)</span>
       <span style={{ color }}>Encoded message:</span>
       <span className="main-text">Polina, you have some problems!</span>
       <span style={{ color }}>Reult:</span>

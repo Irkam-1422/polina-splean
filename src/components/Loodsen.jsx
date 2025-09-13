@@ -9,6 +9,7 @@ export const Loodsen = ({ returnAnswer, color, bg }) => {
         Loodsen Code
       </div>
       <div className="">
+        Who are you without your friends?
         Go to the Loodsen chat, and find a loods with the phone number ending on
         the following numbers:
       </div>

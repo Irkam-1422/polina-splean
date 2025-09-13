@@ -8,6 +8,7 @@ export const Binary = ({ returnAnswer, color, bg }) => {
       <div className="title" style={{ color }}>
         Binary Code
       </div>
+      <div style={{marginBottom: ".5rem"}}>That's what it's like to have a developer sister... had to put this one in...</div>
       <div className="">Letters are encoded like this:</div>
       <div className="">
         <div className="">A = 00001</div>

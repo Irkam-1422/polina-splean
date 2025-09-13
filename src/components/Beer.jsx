@@ -10,7 +10,7 @@ export const Beer = ({ returnAnswer, color, bg }) => {
       </div>
       <div className="">
         It's time for a drink!. Look at the back of the beer can, 
-        you need the following letters (ignore the spaces):
+        you need the following letters (ignore the spaces, but not the comas):
       </div>
       <span style={{ color }}>Decode (line number, position in line):</span>
       <span className="main-text">1,7 2,5 3,7 4,5 5,2</span>
